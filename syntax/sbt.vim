@@ -13,7 +13,7 @@ syn region sbtString start="\"[^"]" skip="\\\"" end="\"" contains=sbtStringEscap
 syn match sbtStringEscape "\\u[0-9a-fA-F]\{4}" contained
 syn match sbtStringEscape "\\[nrfvb\\\"]" contained
 
-syn match sbtIdentitifer "^\S\+\ze\s*\(:=\|++=\|+=\|<<=\|<+=\)"
+syn match sbtIdentitifer "^\S\+\ze\s*\(:=\|++=\|+=\|<<=\|<+=\|in \)"
 syn match sbtBeginningSeq "^[Ss]eq\>"
 syn match sbtAddPlugin "^addSbtPlugin\>"
 
